@@ -1,0 +1,60 @@
+.header {
+    min-height: 56px;
+    transition: min-height 0.3s;
+}
+
+header.navbar-container {
+    background-color: darkred;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 1.5rem;
+    z-index: 999;
+}
+
+.menu {
+    font-size: 25px;
+    display: none;
+    width: 44px;
+    height: 44px;
+    color: whitesmoke;
+}
+
+.logo-font {
+    font-size: x-large;
+    font-weight: bold;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.4em 0;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+    box-sizing: border-box;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+header.navbar-container .nav-list a:hover {
+    background-color: whitesmoke;
+    color: darkred;
+}

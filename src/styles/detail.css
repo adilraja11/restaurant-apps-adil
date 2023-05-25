@@ -1,0 +1,191 @@
+.detail {
+  margin: 2em 10%;
+  padding: 1em;
+}
+
+.detail-resto-label {
+  color: darkred;
+  font-size: 24px;
+  margin-bottom: 0.5em;
+}
+
+.tag-detail {
+  padding: 4px 8px;
+  border: 1px solid darkred;
+  background-color: darkred;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  color: whitesmoke;
+  width: fit-content;
+  margin-bottom: 8px;
+}
+
+.tag-detail i {
+  margin-right: 8px;
+}
+
+
+.detail-resto-caption {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.resto-thumbnail {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  max-height: 600px;
+  margin-bottom: 8px;
+}
+
+#resto-menu-detail {
+  display: grid;
+  grid-row-gap: 1.5em;
+  width: 100%;
+}
+
+.resto-menu-item {
+  width: 100%;
+  text-align: left;
+  transition: 0.3s;
+  background-color: whitesmoke;
+  /* Add border */
+  border: 1px solid darkred;
+  /* Add space between the border and the content */
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.resto-menu-item-label {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  color: darkred;
+}
+
+.resto-menu-item-description {
+  margin-top: 8px;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+#reviews-item {
+  display: grid;
+  grid-row-gap: 1.5em;
+  grid-column-gap: 1.5em;
+  width: 100%;
+}
+
+.review-item {
+  width: 100%;
+  text-align: left;
+  transition: 0.3s;
+  background-color: whitesmoke;
+  /* Add border */
+  border: 1px solid darkred;
+  /* Add space between the border and the content */
+  border-radius: 12px 12px 12px 0px;
+  padding: 12px;
+}
+
+.review-item-description {
+  margin-top: 8px;
+  font-weight: lighter;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.review-item-user {
+  margin-top: 8px;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.review-item-user strong {
+  color: darkred;
+  font-weight: bold;
+}
+
+/*
+  Like
+*/
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkred;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 48px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 18px;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+#form-review {
+  margin-top: 32px;
+  width: 100%;
+  text-align: left;
+  transition: 0.3s;
+  background-color: whitesmoke;
+  /* Add border */
+  border: 1px solid darkred;
+  /* Add space between the border and the content */
+  border-radius: 12px 12px 12px 0px;
+  padding: 12px;
+}
+
+.form-label {
+padding-bottom: 8px;
+color: black;
+font-size: 16px;
+}
+
+.form-control {
+  margin-top: 8px;
+  display: block;
+  width: 100%;
+  min-height: 1em;
+  padding: 0.3em;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid darkred;
+  appearance: none;
+  height: 44px;
+}
+
+.form-type {
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.375em 0.75em;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  background-color: darkred;
+  border: 1px solid transparent;
+  font-size: medium;
+  border-radius: 0.276em;
+  cursor: pointer;
+  text-decoration: none;
+  height: 44px;
+}
+
+.btn:hover {
+  background-color: red;
+}

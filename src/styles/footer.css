@@ -1,0 +1,9 @@
+footer {
+    margin: 0 auto;
+    padding: 2em;
+    width: 100%;
+    text-align: center;
+    background-color: darkred;
+    color: whitesmoke;
+    font-size: 14px;
+}

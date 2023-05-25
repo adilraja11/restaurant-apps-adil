@@ -1,0 +1,161 @@
+@media only screen and (max-width: 340px) {
+    header.navbar-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .logo-font,
+    .hero-title {
+        font-size: 2em;
+    }
+    .nav-item a,
+    .hero-tagline,
+    .hero-button {
+        font-size: 1.5em;
+    }
+    .hero-button {
+        min-width: 44px;
+        min-height: 44px;
+    }
+    .like {
+        right: 32px;
+    }
+    .tag-detail {
+        font-size: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .logo-font,
+    .hero-title {
+        font-size: 2em;
+    }
+    .nav-item a,
+    .hero-tagline {
+        font-size: 1.5em;
+    }
+    .hero-button {
+        font-size: 1.25em;
+        min-width: 44px;
+        min-height: 44px;
+    }
+    .tag-detail {
+        font-size: 0.75em;
+    }
+}
+
+
+/* Smaller devices ( <= 600px ) */
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: block;
+        background-color: transparent;
+        border: 1px solid transparent;
+        text-align: center;
+    }
+    .menu-hp {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .menu span {
+        text-align: center;
+    }
+    nav {
+        z-index: -999;
+        background-color: darkred;
+        width: 100%;
+        position: absolute;
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(0, 20px);
+        transform: translate(0, 11px);
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+    }
+    .open {
+        z-index: 999;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 53px);
+    }
+    .nav-item {
+        display: list-item;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-list-block {
+        display: flex;
+    }
+}
+
+
+/* Small devices ( >= 600px ) */
+
+@media only screen and (min-width: 600px) {
+    #restaurant-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1.545em;
+        grid-row-gap: 1.545em;
+    }
+    
+    #resto-menu-detail {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1.545em;
+        grid-row-gap: 1.545em;
+    }
+
+    #reviews-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .like {
+        right: 56px;
+    }
+}
+
+
+/* Medium devices ( >= 768px ) */
+
+@media only screen and (min-width: 768px) {
+    .logo-font,
+    .hero-title {
+        font-size: 2.5em;
+    }
+    .nav-item a,
+    .hero-tagline {
+        font-size: 2em;
+    }
+    #testimonial-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1.545em;
+        grid-row-gap: 1.545em;
+    }
+}
+
+
+/* Large devices ( >= 992px ) */
+
+@media only screen and (min-width: 992px) {
+    #restaurant-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #reviews-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+/* Extra large devices ( >= 1200px ) */
+
+@media only screen and (min-width: 1200px) {
+    #restaurant-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

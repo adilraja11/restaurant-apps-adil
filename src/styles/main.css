@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    padding: 8px;
+    background-color: #bf1722;
+    color: white;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+.content {
+    margin: 2em 10%;
+    padding: 1em;
+}
+
+.content-resto-empty {
+    text-align: center;
+    font-size: small;
+}
+
+.content-resto-label {
+    color: darkred;
+    font-size: 20px;
+    margin-bottom: 0.25em;
+}
+
+.content-resto-caption {
+    font-size: 16px;
+}
+
+#restaurant-item {
+    display: grid;
+    grid-row-gap: 1.5em;
+    width: 100%;
+}
+
+.resto-item {
+    width: 100%;
+    text-align: left;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: whitesmoke;
+    /* Add border */
+    border: 1px solid darkred;
+    /* Add space between the border and the content */
+    border-radius: 0px 0px 12px 12px;
+}
+
+.resto-item:hover {
+    box-shadow: 5px 5px 0.5px 0px darkred;
+}
+
+.resto-item-thumbnail {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    max-height: 600px;
+    margin-bottom: 8px;
+}
+
+.resto-item-detail {
+    padding: 8px;
+}
+
+.tag {
+    padding: 4px 8px;
+    border: 1px solid darkred;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: darkred;
+}
+
+.tag i {
+    margin-right: 4px;
+}
+
+.resto-item-name {
+    margin-top: 1em;
+    font-weight: bolder;
+    font-size: 16px;
+    color: darkred;
+}
+
+.resto-item-description {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.testi-resto-label {
+    color: darkred;
+    font-size: 20px;
+    margin-bottom: 0.5em;
+    margin-top: 32px;
+}
+
+.testi-resto-caption {
+    font-size: 16px;
+}
+
+#testimonial-item {
+    display: grid;
+    grid-row-gap: 1.5em;
+    width: 100%;
+}
+
+.testi-item {
+    width: 100%;
+    text-align: left;
+    transition: 0.3s;
+    background-color: whitesmoke;
+    /* Add border */
+    border: 1px solid darkred;
+    /* Add space between the border and the content */
+    border-radius: 12px 12px 12px 0px;
+    padding: 12px;
+}
+
+.testi-item-description {
+    margin-top: 8px;
+    font-weight: lighter;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.testi-item-user {
+    margin-top: 8px;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.testi-item-user strong {
+    color: darkred;
+}
