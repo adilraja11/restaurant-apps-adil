@@ -86,6 +86,9 @@
     .nav-list-block {
         display: flex;
     }
+    .hero {
+        background-image: url(../public/images/heros/hero-image_4-small.jpg);
+    }
 }
 
 

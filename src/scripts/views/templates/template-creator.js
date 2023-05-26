@@ -2,7 +2,7 @@ import CONFIG from '../../global/config';
 
 const createRestaurantItemTemplate = (resto) => `
     <article tabindex="0" class="resto-item">
-        <img tabindex="0" class="resto-item-thumbnail lazyload" src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}" alt="Gambar Restoran ${resto.name}">
+        <img tabindex="0" class="resto-item-thumbnail lazyload" data-src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}" alt="Gambar Restoran ${resto.name}">
         <div class="resto-item-detail">
             <span tabindex="0" aria-label="Rating ${resto.rating}" class="tag"><i class="fa-solid fa-star"></i>${resto.rating}</span>
             <span tabindex="0" aria-label="Kota ${resto.city}" class="tag"><i class="fa-solid fa-location-dot"></i>${resto.city}</span>

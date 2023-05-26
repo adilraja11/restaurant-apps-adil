@@ -6,6 +6,7 @@ Feature('Liking Restaurants');
 // eslint-disable-next-line new-cap
 Before(({I}) => {
   I.amOnPage('/#/favorite');
+  I.wait(5);
 });
 
 // eslint-disable-next-line new-cap
@@ -30,11 +31,13 @@ Scenario('liking one restaurant', async ({I}) => {
   const firstRestaurantTitle = await I.grabTextFrom(firstResto);
 
   I.click(firstLocateResto);
+  I.wait(5);
 
   I.seeElement('#likeButton');
   I.click('#likeButton');
 
   I.amOnPage('/#/favorite');
+  I.wait(5);
   I.seeElement('#restaurant-item');
 
   const favoritedRestoTitle = await I.grabTextFrom('.resto-item-detail .resto-item-name');
@@ -42,10 +45,12 @@ Scenario('liking one restaurant', async ({I}) => {
 
   //   Unlike Restaurant
   I.click(firstLocateResto);
+  I.wait(5);
 
   I.seeElement('#likeButton');
   I.click('#likeButton');
 
   I.amOnPage('/#/favorite');
+  I.wait(5);
   I.see('You dont have any Favorite Cafe or Restaurant', '#restaurant-item');
 });
