@@ -34,7 +34,7 @@ header.navbar-container .nav-list ul {
     padding-left: 0;
     display: flex;
     justify-content: center;
-    gap: 2rem 1rem;
+    gap: 1.5rem 0.25rem;
 }
 
 header.navbar-container .nav-list li {
@@ -46,7 +46,7 @@ header.navbar-container .nav-list li a {
     font-size: 1.05rem;
     font-weight: 500;
     color: white;
-    padding: 1rem 2rem;
+    padding: 1rem 1.65rem;
     border-radius: 999px;
     transition: all .2s ease-in-out;
     box-sizing: border-box;
